@@ -38,6 +38,7 @@ nav {
 	background-color: var(--accent1-color); /*update color*/
 	margin: 0 auto;
 	max-width: 800px;
+  text-align: center;
 }
 
 nav a {
@@ -49,6 +50,10 @@ nav a {
 }
 
 /*main*/
+main {
+  margin: 1rem;
+  padding: 1rem;
+}
   /*h1*/
 h1 {
   background-color: var(--primary-color);
@@ -69,12 +74,9 @@ h2 {
   color: var(--secondery-color);
 }
 
-.sec1 {
+.sec1, .sec2 {
   border: 1px solid var(--primary-color);
-}
-
-.sec2 {
-  border: 1px solid var(--primary-color);
+  flex-direction: row;
 }
 
 
