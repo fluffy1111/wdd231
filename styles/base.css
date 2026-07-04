@@ -45,7 +45,6 @@ nav a {
 	display: block;
 	color: var(--secondery-color); /*update color*/
 	text-align: center;
-	padding: 1rem;
 	text-decoration: none;
 }
 
@@ -72,11 +71,13 @@ section {
 h2 {
   background-color: var(--accent1-color);
   color: var(--secondery-color);
+  position: relative;
 }
 
 .sec1, .sec2 {
   border: 1px solid var(--primary-color);
   flex-direction: row;
+  grid-template-columns: 1fr, 1fr;
 }
 
 
