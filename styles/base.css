@@ -80,6 +80,10 @@ h2 {
   grid-template-columns: 1fr, 1fr;
 }
 
+.sec2 img{
+  height: auto;
+  width: auto;
+}
 
 .sec3 {
   border: 1px solid var(--primary-color);
