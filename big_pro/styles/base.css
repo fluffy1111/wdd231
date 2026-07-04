@@ -1,0 +1,79 @@
+:root {
+  --primary-color: darkgreen;
+  --secondery-color: purple;
+  --accent1-color: lightgreen;
+  --accent2-color: pink;
+}
+
+* {
+  margin: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 300;
+}
+/*header*/
+header {
+	margin: 10px;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+.hamburger.show::before {
+  content: "\00D7";
+}
+  /*logo*/
+  /*nav bar*/
+/*main*/
+  /*h1*/
+h1 {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+}
+
+  /*three sections*/
+section {
+  border: 1px black;
+  background-color: var(--accent1-color);
+  color: var(--secondery-color);
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+h2 {
+  background-color: var(--accent1-color);
+  color: var(--secondery-color);
+}
+
+.sec1 {
+  border: 1px solid var(--primary-color);
+  grid-row: 1/2;
+}
+
+.sec2 {
+  grid-column: 2/3;
+  border: 1px solid var(--primary-color);
+}
+
+
+.sec3 {
+  grid-column: 1/4;
+  border: 1px solid var(--primary-color);
+}
+    /*if screen is wide enogh than 2x3 grid,
+    first section; first row, first and second coloum,
+    second section; first row, therd coloum,
+    therd section; second row, ferst through therd coloum
+      and therd section has a 2x3 grid itself*/
+
+    /*else 3x1 grid
+      therd section grid 4x3,
+      the things in the 2rd too 4th row span coloums 1 through 3*/
+/*footer*/
+  /*socel media pics centered above the main footer*/
+  /*main footer baner*/
