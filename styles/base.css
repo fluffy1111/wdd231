@@ -98,5 +98,29 @@ h2 {
       therd section grid 4x3,
       the things in the 2rd too 4th row span coloums 1 through 3*/
 /*footer*/
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    height: 50px;
+    width: auto;
+    margin: 5px;
+    padding: 2px;
+}
+
+footer {
+	background-color: var(--accent1-color);
+	color: var(--secondery-color);
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+}
   /*socel media pics centered above the main footer*/
   /*main footer baner*/
