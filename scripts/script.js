@@ -17,7 +17,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -30,7 +30,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -42,7 +42,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -68,7 +68,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -86,12 +86,40 @@ const courses = [
     }
 ]
 
-function CourseCard () {
-  courses.forEach(course => {
+const every = document.querySelector("#all");
+const html = document.querySelector("#wdd");
+const snak = document.querySelector("#cse");
+
+html.addEventListener("click", () => {
+  let page = courses.filter(course => course.subject.includes("WDD"))
+  CourseCard(page)
+})
+
+snak.addEventListener("click", () => {
+  let slither = courses.filter(course => course.subject.includes("CSE"))
+  CourseCard(slither)
+})
+
+every.addEventListener("click", () => {
+  CourseCard(courses)
+})
+
+function CourseCard (filterdCourse) {
+  document.querySelector(".bottoms").innerHTML = "";
+  filterdCourse.forEach(course => {
     // create tags
     let block = document.createElement("section")
-    let 
+    let name = document.createElement("h3")
+
     // content of tags
+    name.innerHTML = `<span class="label">${course.subject}</span>  ${course.number}`
+
+    //append
+    block.append(name)
+    block.append(course.credits)
+    block.append(course.completed)
+
     // conect div class
+    document.querySelector(".bottoms").appendChild(block);
   })
 }

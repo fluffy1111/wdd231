@@ -101,6 +101,11 @@ h2 {
 .sec3 h3 {
   text-align: center;
 }
+
+div .bottems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
     /*if screen is wide enogh than 2x3 grid,
     first section; first row, first and second coloum,
     second section; first row, therd coloum,
