@@ -19,6 +19,11 @@ header {
 	margin: 10px;
 }
 
+header img {
+  height: 3rem;
+  width: 3rem;
+}
+
 .hamburger::before {
   content: "\2630";
 }
