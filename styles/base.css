@@ -77,7 +77,7 @@ h2 {
 .sec1, .sec2 {
   border: 1px solid var(--primary-color);
   flex-direction: row;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .sec2 img{
