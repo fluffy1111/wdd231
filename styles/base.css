@@ -98,13 +98,14 @@ h2 {
   text-align: center;
 }
 
-.sec3 h3 {
+h3 {
   text-align: center;
 }
 
-div .bottems {
+.bottems {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  place-items: center;
 }
     /*if screen is wide enogh than 2x3 grid,
     first section; first row, first and second coloum,
