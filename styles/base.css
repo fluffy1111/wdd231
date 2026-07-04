@@ -74,7 +74,7 @@ h2 {
   position: relative;
 }
 
-.sec1, .sec2 {
+section {
   border: 1px solid var(--primary-color);
   flex-direction: row;
   grid-template-columns: repeat(3, 1fr);
@@ -90,7 +90,6 @@ h2 {
   justify-content: center;
   flex-direction: column;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .sec3 h2{
@@ -103,8 +102,8 @@ h3 {
 }
 
 .bottems {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-column: 1/4;
+  flex-direction: row;
   place-items: center;
 }
     /*if screen is wide enogh than 2x3 grid,
