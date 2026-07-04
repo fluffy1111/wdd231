@@ -87,6 +87,19 @@ h2 {
 
 .sec3 {
   border: 1px solid var(--primary-color);
+  justify-content: center;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sec3 h2{
+  grid-column: 1/4;
+  text-align: center;
+}
+
+.sec3 h3 {
+  text-align: center;
 }
     /*if screen is wide enogh than 2x3 grid,
     first section; first row, first and second coloum,
