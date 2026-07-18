@@ -72,8 +72,6 @@ h1 {
 }
 
 h2 {
-  background-color: var(--accent1-color);
-  color: var(--secondery-color);
   position: relative;
 }
 
@@ -84,7 +82,6 @@ h2 {
 }
 
 .sec3 {
-  border: 1px solid var(--primary-color);
   justify-content: center;
   flex-direction: column;
   display: grid;
