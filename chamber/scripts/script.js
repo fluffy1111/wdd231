@@ -124,3 +124,7 @@ function CourseCard (filterdCourse) {
   })
 }
 
+    // json
+const url = '../data/members.json'
+
+const cards = document.querySelector("#cards");
