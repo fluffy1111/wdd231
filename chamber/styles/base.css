@@ -62,7 +62,6 @@ h1 {
 
   /*three sections*/
 .sec1, .sec2, .sec3 {
-  border: 1px black;
   background-color: var(--accent1-color);
   color: var(--secondery-color);
   display:flex;
