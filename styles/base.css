@@ -37,3 +37,42 @@ nav a {
 	text-align: center;
 	text-decoration: none;
 }
+
+main {
+  margin: 1rem;
+  padding: 1rem;
+}
+  /*h1*/
+h1 {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    height: 50px;
+    width: auto;
+    margin: 5px;
+    padding: 2px;
+}
+
+footer {
+	background-color: var(--accent1-color);
+	color: var(--secondery-color);
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+}
