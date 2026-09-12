@@ -33,6 +33,7 @@ nav {
 
 nav a {
   display: flex;
+  justify-content: space-around;
 	color: var(--secondery-color); /*update color*/
 	text-align: center;
 	text-decoration: none;
@@ -51,6 +52,19 @@ h1 {
 
 h2 {
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: block;
+  color: var(--primary-color);
+	background-color: var(--accent1-color);
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
 }
 
 .socialmedia {
