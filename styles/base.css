@@ -67,6 +67,21 @@ section {
   justify-content: space-around;
 }
 
+h3 {
+  text-align: center;
+}
+
+.bottems {
+  grid-column: 1/4;
+  flex-direction: row;
+  place-items: center;
+}
+
+.classes {
+  grid-column: 1/4;
+  text-align: center;
+}
+
 .socialmedia {
     display: flex;
     justify-content: center;
