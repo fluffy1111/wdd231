@@ -1,10 +1,9 @@
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
 const navButton = document.querySelector('#nav-button');
-const navBar = document.querySelector('#nav-bar')
 
 navButton.addEventListener('click', () => {
-  navBar.classList.toggle('active');
+  navButton.classList.toggle('navigation');
 });
 
 const courses = [

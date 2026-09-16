@@ -24,10 +24,6 @@ header {
   content: "\00D7";
 }
 
-.hamburger ul {
-  display: none;
-}
-
 nav {
 	background-color: var(--accent1-color); /*update color*/
 	margin: 0 auto;
