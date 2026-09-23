@@ -127,4 +127,13 @@ function CourseCard (filterdCourse) {
     // json
 const url = '../data/members.json'
 
-const cards = document.querySelector("#cards");
+
+function jsonCards (jsoncard) {
+    document.querySelector("#cards").innerHTML = "";
+    jsoncard.forEach(jcard => {
+        // create tags
+        // contsnt of tags
+        // append
+        // conect div clas
+    })
+}
