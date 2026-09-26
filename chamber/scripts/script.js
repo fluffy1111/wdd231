@@ -90,6 +90,10 @@ const every = document.querySelector("#all");
 const html = document.querySelector("#wdd");
 const snak = document.querySelector("#cse");
 
+every.addEventListener("click", () => {
+  CourseCard(courses)
+})
+
 html.addEventListener("click", () => {
   let page = courses.filter(course => course.subject.includes("WDD"))
   CourseCard(page)
@@ -100,9 +104,6 @@ snak.addEventListener("click", () => {
   CourseCard(slither)
 })
 
-every.addEventListener("click", () => {
-  CourseCard(courses)
-})
 
 function CourseCard (filterdCourse) {
   document.querySelector(".bottoms").innerHTML = "";
@@ -143,11 +144,40 @@ function jsonCards (jsoncard) {
 
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const futur1Temp = document.querySelector('#forcast_1');
+const futur2Temp = document.querySelector('#forcast_2');
+const futur3Temp = document.querySelector('#forcast_3');
+// request variables for the URL
+const myKey = "691a3029fdb996e203bf2c27f47e6d65"
+const myLat = "42.26023215415168"
+const myLong = "-71.80457075898805"
+
 // url
-const url_weth = 'https://api.openweathermap.org/data/2.5/___________';// finish later
-// OpenWeatherMap API
-    //current temperature
-    //current discription
-    // three days temperature forcast
+const url_weth = `//api.openweathermap.org/data/2.5/wether?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;// finish later
+
+
+
+async function apiFetch() {
+  try {
+    const response = await fetch(url_weth);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data); // testing only
+      displayResults(data); // uncomment when ready
+    } else {
+        throw Error(await response.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
+}
+// display Json
+function displayResults(data) {
+    console.log("hello")
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    futur1Temp.innerHTML = `${data.main.temp}&deg;F`;
+    futur2Temp.innerHTML = `${data.main.temp}&deg;F`;
+    futur3Temp.innerHTML = `${data.main.temp}&deg;F`;
+}
+
+apiFetch();
