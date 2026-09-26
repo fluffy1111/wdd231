@@ -61,6 +61,9 @@ section {
   color: var(--primary-color);
 	background-color: var(--accent1-color);
 }
+.current {
+  text-shadow: 10px;
+}
 
 .info {
   display: flex;
