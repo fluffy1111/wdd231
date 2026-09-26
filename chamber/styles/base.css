@@ -62,7 +62,7 @@ section {
 	background-color: var(--accent1-color);
 }
 .current {
-  text-shadow: 10px;
+  color: var(--primary-color)
 }
 
 .info {
