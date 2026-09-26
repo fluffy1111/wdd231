@@ -125,7 +125,7 @@ function CourseCard (filterdCourse) {
 }
 
     // json
-const url = '../data/members.json'
+const url_mem = '../data/members.json'
 
 
 function jsonCards (jsoncard) {
@@ -137,3 +137,17 @@ function jsonCards (jsoncard) {
         // conect div clas
     })
 }
+
+
+// WETHER STUFF
+
+// select HTML elements in the document
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+// url
+const url_weth = 'https://api.openweathermap.org/data/2.5/___________';// finish later
+// OpenWeatherMap API
+    //current temperature
+    //current discription
+    // three days temperature forcast
