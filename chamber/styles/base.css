@@ -85,8 +85,7 @@ h3 {
 }
 
 .bottems {
-  grid-column: 1/4;
-  flex-direction: row;
+  flex-direction: column;
   place-items: center;
 }
 
