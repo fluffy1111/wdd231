@@ -56,6 +56,16 @@ h2 {
   justify-content: center;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 section {
   display: block;
   color: var(--primary-color);
