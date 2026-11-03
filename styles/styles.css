@@ -1,0 +1,93 @@
+:root {
+  --primary-color: darkgreen;
+  --secondery-color: purple;
+  --accent1-color: lightgreen;
+  --accent2-color: pink;
+}
+
+* {
+  margin: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 10px;
+  display: block;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show:active {
+  content: "\00D7";
+}
+
+nav {
+	background-color: var(--accent1-color); /*update color*/
+	margin: 0 auto;
+	max-width: 800px;
+  text-align: center;
+}
+
+nav a {
+  display: flex;
+  justify-content: space-around;
+	color: var(--secondery-color); /*update color*/
+	text-align: center;
+	text-decoration: none;
+}
+
+main {
+  margin: 1rem;
+  padding: 1rem;
+}
+  /*h1*/
+h1 {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: block;
+  color: var(--primary-color);
+	background-color: var(--accent1-color);
+}
+.current {
+  color: var(--primary-color)
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+  text-align: center;
+}
+
+.bottems {
+  flex-direction: column;
+  place-items: center;
+}
+
+.classes {
+  grid-column: 1/4;
+  text-align: center;
+}
+
+footer {
+	background-color: var(--accent1-color);
+	color: var(--secondery-color);
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+}
