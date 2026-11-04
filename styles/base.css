@@ -13,10 +13,9 @@
 
 header {
   margin: 10px;
-  display: block;
+  display: grid;
   grid-template-columns: 24px 1fr 44px;
 }
-
 
 .hamburger::before {
   content: "\2630";
