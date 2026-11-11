@@ -150,5 +150,6 @@ function jsonCards (jsoncard) {
         Ecard.append(prophile)
         Ecard.append(level)
         // conect div clas
+        document.querySelector(".cards").appendChild(Ecard)
     })
 }

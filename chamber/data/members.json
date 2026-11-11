@@ -1,0 +1,109 @@
+
+{ "compony":
+  [
+    {
+      "name": "John compony",
+      "address": {
+        "street": "123 Bedford Road",
+        "city": "Gweru",
+        "state": "Midlands Province",
+        "country": "Zimbabwe",
+        "zip": "00000"},
+      "phone": "101-420-8008",
+      "URL": "https://fluffy1111.github.io/wdd231/chamber/directory.html",
+      "image": "photo",
+      "membership_level": 2
+    },
+    {
+      "name": "John compony",
+      "address": {
+        "street": "123 Bedford Road",
+        "city": "Gweru",
+        "state": "Midlands Province",
+        "country": "Zimbabwe",
+        "zip": "00000"},
+      "phone": "101-420-8008",
+      "URL": "https://fluffy1111.github.io/wdd231/chamber/directory.html",
+      "image": "photo",
+      "membership_level": 2
+    },
+    {
+      "name": "John compony",
+      "address": {
+        "street": "123 Bedford Road",
+        "city": "Gweru",
+        "state": "Midlands Province",
+        "country": "Zimbabwe",
+        "zip": "00000"},
+      "phone": "101-420-8008",
+      "URL": "https://fluffy1111.github.io/wdd231/chamber/directory.html",
+      "image": "photo",
+      "membership_level": 2
+    },
+    {
+      "name": "John compony",
+      "address": {
+        "street": "123 Bedford Road",
+        "city": "Gweru",
+        "state": "Midlands Province",
+        "country": "Zimbabwe",
+        "zip": "00000"},
+      "phone": "101-420-8008",
+      "URL": "https://fluffy1111.github.io/wdd231/chamber/directory.html",
+      "image": "photo",
+      "membership_level": 2
+    },
+    {
+      "name": "John compony",
+      "address": {
+        "street": "123 Bedford Road",
+        "city": "Gweru",
+        "state": "Midlands Province",
+        "country": "Zimbabwe",
+        "zip": "00000"},
+      "phone": "101-420-8008",
+      "URL": "https://fluffy1111.github.io/wdd231/chamber/directory.html",
+      "image": "photo",
+      "membership_level": 2
+    },
+    {
+      "name": "John compony",
+      "address": {
+        "street": "123 Bedford Road",
+        "city": "Gweru",
+        "state": "Midlands Province",
+        "country": "Zimbabwe",
+        "zip": "00000"},
+      "phone": "101-420-8008",
+      "URL": "https://fluffy1111.github.io/wdd231/chamber/directory.html",
+      "image": "photo",
+      "membership_level": 2
+    },
+    {
+      "name": "John compony",
+      "address": {
+        "street": "123 Bedford Road",
+        "city": "Gweru",
+        "state": "Midlands Province",
+        "country": "Zimbabwe",
+        "zip": "00000"},
+      "phone": "101-420-8008",
+      "URL": "https://fluffy1111.github.io/wdd231/chamber/directory.html",
+      "image": "photo",
+      "membership_level": 2
+    },
+    {
+      "name": "John compony",
+      "address": {
+        "street": "123 Bedford Road",
+        "city": "Gweru",
+        "state": "Midlands Province",
+        "country": "Zimbabwe",
+        "zip": "00000"},
+      "phone": "101-420-8008",
+      "URL": "https://fluffy1111.github.io/wdd231/chamber/directory.html",
+      "image": "photo",
+      "membership_level": 2
+    }
+  ]
+}
