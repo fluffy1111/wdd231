@@ -127,12 +127,8 @@ function CourseCard (filterdCourse) {
 }
 
     // json
-const url_mem = await fetch('../data/members.json')
-const jsoncard = await url_mem.json();
-
-function jsonCards (jsoncard) {
-    document.querySelector(".cards").innerHTML = "";
-    jsoncard.forEach(jcard => {
+const jsonCards = (jsoncard) => {
+    jsoncard.forEach((jcard) => {
         // create tags
         let Ecard = document.createElement("section")
         let name = document.createElement("a")
@@ -140,16 +136,31 @@ function jsonCards (jsoncard) {
         let prophile = document.createElement("img")
         let level = document.createElement("a")
         // contsnt of tags
-        name.innerHTML = `<a href="${jcard.URL}">${jcard.name}</a>`
-        phone.innerHTML = `<a">${jcard.phone}</a>`
-        prophile.innerHTML = `<img${jcard.image}>`
-        level.innerHTML = `<a> Membership Level${jcard.membership_level}</a>`
+        name.textContent = `<a href="${jcard.URL}">${jcard.name}</a>`
+        phone.textContent = `<a">${jcard.phone}</a>`
+        prophile.textContent = `<img${jcard.image}>`
+        level.textContent = `<a> Membership Level${jcard.membership_level}</a>`
         // append
         Ecard.append(name)
         Ecard.append(phone)
         Ecard.append(prophile)
         Ecard.append(level)
         // conect div clas
-        document.querySelector(".cards").appendChild(Ecard)
+        document.querySelector("#cards").appendChild(Ecard);
     })
 }
+
+async function getCardData() {
+    try {
+        const url_mem = await fetch('../data/members.json');
+        if (!response.ok) {
+            throw new Error(`Request failed with status ${response.status}`);
+        }
+        const data = await url_mem.json();
+        jsonCards(data.jsoncard);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+getCardData();
