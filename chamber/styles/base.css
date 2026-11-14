@@ -13,8 +13,14 @@
 
 header {
   margin: 10px;
-  display: grid;
   grid-template-columns: 24px 1fr 44px;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  padding: 2px;
 }
 
 .hamburger::before {
@@ -83,6 +89,22 @@ h3 {
 .classes {
   grid-column: 1/4;
   text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    height: 50px;
+    width: auto;
+    margin: 5px;
+    padding: 2px;
 }
 
 footer {
