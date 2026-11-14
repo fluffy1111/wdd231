@@ -127,26 +127,26 @@ function CourseCard (filterdCourse) {
 }
 
     // json
-const url_mem = '../data/members.json'
-
+const url_mem = await fetch('../data/members.json')
+const jsoncard = await url_mem.json();
 
 function jsonCards (jsoncard) {
-    document.querySelector("#cards").innerHTML = "";
+    document.querySelector(".cards").innerHTML = "";
     jsoncard.forEach(jcard => {
         // create tags
         let Ecard = document.createElement("section")
         let name = document.createElement("a")
         let phone = document.createElement("a")
-        let wwwURL = document.createElement("a")
         let prophile = document.createElement("img")
         let level = document.createElement("a")
         // contsnt of tags
-        const cardata = fetch(url_mem)
-        name.innerHTML
+        name.innerHTML = `<a href="${jcard.URL}">${jcard.name}</a>`
+        phone.innerHTML = `<a">${jcard.phone}</a>`
+        prophile.innerHTML = `<img${jcard.image}>`
+        level.innerHTML = `<a> Membership Level${jcard.membership_level}</a>`
         // append
         Ecard.append(name)
         Ecard.append(phone)
-        Ecard.append(wwwURL)
         Ecard.append(prophile)
         Ecard.append(level)
         // conect div clas
