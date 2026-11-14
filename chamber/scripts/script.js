@@ -127,6 +127,21 @@ function CourseCard (filterdCourse) {
 }
 
     // json
+
+async function getCardData() {
+    try {
+        const url_mem = await fetch('../data/members.json');
+        if (!response.ok) {
+            throw new Error(`Request failed with status ${response.status}`);
+        }
+        const data = await url_mem.json();
+        jsonCards(data.jsoncard);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
 const jsonCards = (jsoncard) => {
     jsoncard.forEach((jcard) => {
         // create tags
@@ -148,19 +163,6 @@ const jsonCards = (jsoncard) => {
         // conect div clas
         document.querySelector("#cards").appendChild(Ecard);
     })
-}
-
-async function getCardData() {
-    try {
-        const url_mem = await fetch('../data/members.json');
-        if (!response.ok) {
-            throw new Error(`Request failed with status ${response.status}`);
-        }
-        const data = await url_mem.json();
-        jsonCards(data.jsoncard);
-    } catch (error) {
-        console.error(error);
-    }
 }
 
 getCardData();

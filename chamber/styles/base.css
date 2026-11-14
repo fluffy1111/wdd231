@@ -91,6 +91,13 @@ h3 {
   text-align: center;
 }
 
+.cards {
+  flex-direction: column;
+  place-items: center;
+  grid-column: 1/4;
+  text-align: center;
+}
+
 .socialmedia {
     display: flex;
     justify-content: center;
